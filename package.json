@@ -31,7 +31,7 @@
     "start": "react-scripts start",
     "test": "react-scripts test",
     "prepare": "husky install",
-    "makewords": "ts-node -O '{\"module\":\"commonjs\"}' makewords.ts > src/constants/wordlist.ts"
+    "makewords": "ts-node -O {\"\"\"module\"\"\":\"\"\"commonjs\"\"\"} makewords.ts > src/constants/wordlist.ts"
   },
   "eslintConfig": {
     "extends": [
