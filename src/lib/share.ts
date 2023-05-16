@@ -1,7 +1,7 @@
 import { getGuessStatuses } from './statuses'
 import { solutionIndex } from './words'
 import { GAME_TITLE } from '../constants/strings'
-import { birdAwards } from '../constants/keys'
+import { seaAnimalAwards } from '../constants/keys'
 import { MAX_CHALLENGES } from '../constants/settings'
 import { UAParser } from 'ua-parser-js'
 
@@ -18,7 +18,7 @@ export const shareStatus = (
   isHighContrastMode: boolean,
   handleShareToClipboard: () => void
 ) => {
-  const awardEmoji = lost ? '🥚' : birdAwards[guesses.length - 1];
+  const awardEmoji = lost ? '🥚' : seaAnimalAwards[guesses.length - 1];
 
   const textToShare =
     `${GAME_TITLE} ${awardEmoji} ${solutionIndex} ${
