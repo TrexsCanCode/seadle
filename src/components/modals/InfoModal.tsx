@@ -10,7 +10,7 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
   return (
     <BaseModal title="How to play" isOpen={isOpen} handleClose={handleClose}>
       <p className="text-sm text-gray-500 dark:text-gray-300">
-        Guess the sequence of sea creature emojis in 6 tries. Sea creatures emojis may occur more than once, but never next to itself.
+        Guess the sequence of sea creature emojis in 6 tries. Sea creature emojis may occur more than once, but never next to itself.
         After each guess, the color of the tiles will change to show how close your guess was to the solution.
       </p>
 
